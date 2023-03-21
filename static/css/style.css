@@ -1,0 +1,259 @@
+body {
+  background: #F5F5F5;
+  margin-top: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-family: "Open Sans",Verdana,Helvetica,sans-serif;
+  font-size: 20px;
+  color: #555;
+
+  }
+
+h1 {
+  font-size: 2.5em;
+  color: #003299;
+  text-align: center;
+  }
+
+p {
+  font-family: "Open Sans",Verdana,Helvetica,sans-serif;
+  font-size: 1em;
+  color: #555;
+  }
+
+.content{
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  display: block;
+    width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+    box-shadow: 0 0 5px #888;
+
+}
+
+
+.inputfile {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+    border-radius: 5px;
+}
+.inputfile + label, .pred_button, .result{
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+    background-color: #002166;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 #888;
+}
+.footer {
+
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+#file-message {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #4076bf;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+.pred_button:hover, .result:hover{
+    background-color: #4076bf;
+    cursor: pointer;
+}
+input[type="submit"] {
+  border: none;
+}
+
+
+
+.logo_ONCFM {
+  width: 100%;
+  margin: 0;
+    border-radius: 5px;
+}
+
+.exemple_fichier{
+    margin-bottom: 15px;
+}
+/* Style pour le tableau */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+/* Style pour les en-têtes du tableau */
+th {
+    background-color: #002166;
+    color: white;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style pour les cellules du tableau */
+td {
+    padding: 7px;
+    text-align: left;
+    border-top: 1px solid #dddddd;
+}
+
+/* Style pour les lignes paires du tableau */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style pour les lignes impaires du tableau */
+tr:nth-child(odd) {
+    background-color: white;
+}body {
+  background: #F5F5F5;
+  margin-top: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-family: "Open Sans",Verdana,Helvetica,sans-serif;
+  font-size: 20px;
+  color: #555;
+
+  }
+
+h1 {
+  font-size: 2.5em;
+  color: #003299;
+  text-align: center;
+  }
+
+p {
+  font-family: "Open Sans",Verdana,Helvetica,sans-serif;
+  font-size: 1em;
+  color: #555;
+  }
+
+.content{
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  display: block;
+    width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+    box-shadow: 0 0 5px #888;
+
+}
+
+
+.inputfile {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+    border-radius: 5px;
+}
+.inputfile + label, .pred_button, .result{
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+    background-color: #002166;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 #888;
+}
+.footer {
+
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+#file-message {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #4076bf;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+.pred_button:hover, .result:hover{
+    background-color: #4076bf;
+    cursor: pointer;
+}
+input[type="submit"] {
+  border: none;
+}
+
+
+
+.logo_ONCFM {
+  width: 100%;
+  margin: 0;
+    border-radius: 5px;
+}
+
+.exemple_fichier{
+    margin-bottom: 15px;
+}
+/* Style pour le tableau */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+/* Style pour les en-têtes du tableau */
+th {
+    background-color: #002166;
+    color: white;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style pour les cellules du tableau */
+td {
+    padding: 7px;
+    text-align: left;
+    border-top: 1px solid #dddddd;
+}
+
+/* Style pour les lignes paires du tableau */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style pour les lignes impaires du tableau */
+tr:nth-child(odd) {
+    background-color: white;
+}

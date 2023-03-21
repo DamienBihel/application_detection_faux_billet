@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Résultat{% endblock %}
+
+{% block additional_head %}
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+{% endblock %}
+
+{% block content %}
+        <h1>Résultat de la détection</h1>
+
+        <!-- Histogramme des billets vrais et faux -->
+        <div id="histogram" data-nb-vrais-billets="{{ nb_vrais_billets }}" data-nb-faux-billets="{{ nb_faux_billets }}">
+        </div>
+        <p>Le modèle a trouvé {{ nb_vrais_billets }} vrais billets et {{ nb_faux_billets }} faux billets.</p>
+
+        <!-- Liens de téléchargement -->
+        <h2>Liens de téléchargement</h2>
+        {{ download_link | safe }}
+        <br>
+
+        <!-- Liste des billets -->
+        <h2>Liste des billets </h2>
+        {{ data | safe }}
+{% endblock %}
+
+{% block additional_scripts %}
+    <script src="/static/js/main.js"></script>
+{% endblock %}

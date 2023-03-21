@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Application{% endblock %}
+
+{% block additional_head %}
+    <script>
+            function updateLabelAndMessage() {
+              var label = document.getElementById("file-label");
+              var message = document.getElementById("file-message");
+              var input = document.getElementById("file");
+              if (input.value) {
+                label.innerHTML = "Fichier CSV chargé : " + input.value.split("\\").pop();
+                message.innerHTML = "Le fichier a été chargé avec succès.";
+                message.style.color = "green";
+              } else {
+                label.innerHTML = "Choisir un fichier CSV";
+                message.innerHTML = "";
+              }
+            }
+    </script>
+{% endblock %}
+
+{% block content %}
+    <h1>Détection de faux billets</h1>
+    <p>Veuillez fournir un fichier CSV pour faire la détection.</p>
+    <p>Le fichier doit avoir la forme suivante (<a href="{{ url_for('static', filename='billets_production.csv') }}" download="billets_production.csv">exemple de fichier</a>) : </p>
+    <img src="/static/img/Capture%20d’écran%202023-03-16%20à%2010.41.24.png"
+         alt="exemple de fichier" class="exemple_fichier">
+    <br>
+    <form method="POST" action="{{ url_for('predict') }}" enctype="multipart/form-data">
+        <input type="file" name="file" id="file" class="inputfile" onchange="updateLabelAndMessage()">
+        <label for="file" id="file-label">Choisir un fichier CSV</label>
+        <div id="file-message"></div>
+        <br>
+        <input type="submit" value="Détecter" class="pred_button"/>
+    </form>
+{% endblock %}
+
+
+

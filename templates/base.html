@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Titre par défaut{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    {% block additional_head %}{% endblock %}
+</head>
+<body>
+    <div class="content">
+        <a href="{{ url_for('hello_world') }}">
+            <img src="/static/img/Capture%20d’écran%202023-03-16%20à%2009.59.19.png" alt="logo ONCFM" class="logo_ONCFM">
+        </a>
+        {% block content %}{% endblock %}
+    </div>
+    <div class="footer">
+        <p>Crédits : Damien Bihel / <a href="https://github.com/DamienBihel/algorithme_detection_faux_billet">github</a></p>
+    </div>
+    {% block additional_scripts %}{% endblock %}
+</body>
+</html>
